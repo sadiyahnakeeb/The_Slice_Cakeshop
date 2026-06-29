@@ -146,6 +146,7 @@
             font-weight: 600;
             transition: all 0.3s;
             display: inline-block;
+            text-decoration: none;
         }
         
         .btn:hover {
@@ -298,7 +299,7 @@
                 </div>
                 <div class="product-info">
                     <p>Indulge in our signature buttercream cakes, featuring rich, moist layers with smooth, velvety frosting. Perfect for celebrations and special occasions.</p>
-                    <button class="btn">Learn More</button>
+                    <button class="btn" onclick="openWhatsApp()">Learn More</button>
                 </div>
             </div>
             
@@ -308,7 +309,7 @@
                 </div>
                 <div class="product-info">
                     <p>Elegant individual cupcakes available in a variety of flavors and sophisticated designs. Ideal for parties, events, or personal indulgence.</p>
-                    <button class="btn">Learn More</button>
+                    <button class="btn" onclick="openWhatsApp()">Learn More</button>
                 </div>
             </div>
             
@@ -318,7 +319,7 @@
                 </div>
                 <div class="product-info">
                     <p>Decadent, fudgy brownies crafted for chocolate enthusiasts. Dense, moist, and absolutely irresistible with premium cocoa.</p>
-                    <button class="btn">Learn More</button>
+                    <button class="btn" onclick="openWhatsApp()">Learn More</button>
                 </div>
             </div>
             
@@ -328,7 +329,7 @@
                 </div>
                 <div class="product-info">
                     <p>Fluffy, fresh muffins in classic and creative flavors. Perfect for breakfast, brunch, or as a delightful treat any time of day.</p>
-                    <button class="btn">Learn More</button>
+                    <button class="btn" onclick="openWhatsApp()">Learn More</button>
                 </div>
             </div>
         </section>
@@ -362,7 +363,7 @@
                 <strong>info@theslicecakeshop.com</strong>
             </div>
             
-            <button class="btn">Place an Order</button>
+            <a href="https://wa.me/94773598797?text=Hi%20The%20Slice%20Cake%20Shop%2C%20I%20would%20like%20to%20place%20an%20order" class="btn" target="_blank">Place an Order</a>
         </section>
     </div>
     
@@ -375,5 +376,11 @@
         </div>
         <p style="margin-top: 15px;">Crafted with Excellence</p>
     </footer>
+    
+    <script>
+        function openWhatsApp() {
+            window.open('https://wa.me/94773598797?text=Hi%20The%20Slice%20Cake%20Shop%2C%20I%20am%20interested%20in%20your%20products', '_blank');
+        }
+    </script>
 </body>
 </html>
