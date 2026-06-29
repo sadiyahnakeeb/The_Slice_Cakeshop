@@ -1,2 +1,4 @@
-# The Slice Cakeshop
-Buttercream Cakes • Brownies • Cupcakes • Muffins.Freshly baked with love &amp; perfection 
+# The Slice Cake Shop
+Buttercream Cakes • Brownies • Cupcakes • Muffins.
+Freshly baked with love &amp; perfection 
+
