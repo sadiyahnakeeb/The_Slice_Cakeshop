@@ -1,124 +1,279 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width,initial-scale=1">
-  <title>The Slice Cake Shop</title>
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&family=Playfair+Display:wght@400;600;700&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="assets/css/style.css">
-  <meta name="description" content="Handcrafted buttercream cakes, brownies, cupcakes & muffins - The Slice Cake Shop">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>The Slice Cakeshop - Freshly Baked Goodness</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        
+        body {
+            font-family: 'Georgia', serif;
+            line-height: 1.6;
+            color: #333;
+        }
+        
+        header {
+            background: linear-gradient(135deg, #e8a4d4 0%, #f5d4e6 100%);
+            padding: 40px 20px;
+            text-align: center;
+            box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+        }
+        
+        header h1 {
+            font-size: 3em;
+            color: #8b4569;
+            margin-bottom: 10px;
+            text-shadow: 2px 2px 4px rgba(255,255,255,0.5);
+        }
+        
+        header p {
+            font-size: 1.3em;
+            color: #6b3452;
+            font-style: italic;
+        }
+        
+        nav {
+            background-color: #8b4569;
+            padding: 15px;
+            text-align: center;
+            position: sticky;
+            top: 0;
+            z-index: 100;
+        }
+        
+        nav a {
+            color: white;
+            text-decoration: none;
+            padding: 10px 20px;
+            margin: 0 10px;
+            display: inline-block;
+            font-weight: bold;
+            transition: background-color 0.3s;
+        }
+        
+        nav a:hover {
+            background-color: #6b3452;
+            border-radius: 5px;
+        }
+        
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 40px 20px;
+        }
+        
+        .intro {
+            text-align: center;
+            margin-bottom: 50px;
+        }
+        
+        .intro h2 {
+            color: #8b4569;
+            font-size: 2.5em;
+            margin-bottom: 20px;
+        }
+        
+        .intro p {
+            font-size: 1.1em;
+            color: #666;
+            max-width: 600px;
+            margin: 0 auto;
+        }
+        
+        .products {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+            gap: 30px;
+            margin: 50px 0;
+        }
+        
+        .product-card {
+            background: white;
+            border-radius: 10px;
+            overflow: hidden;
+            box-shadow: 0 4px 15px rgba(0,0,0,0.1);
+            transition: transform 0.3s, box-shadow 0.3s;
+        }
+        
+        .product-card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 6px 20px rgba(0,0,0,0.15);
+        }
+        
+        .product-icon {
+            background: linear-gradient(135deg, #f5d4e6 0%, #e8a4d4 100%);
+            padding: 30px;
+            text-align: center;
+            font-size: 4em;
+        }
+        
+        .product-info {
+            padding: 20px;
+        }
+        
+        .product-info h3 {
+            color: #8b4569;
+            margin-bottom: 10px;
+            font-size: 1.5em;
+        }
+        
+        .product-info p {
+            color: #666;
+            margin-bottom: 15px;
+        }
+        
+        .btn {
+            background-color: #8b4569;
+            color: white;
+            padding: 10px 20px;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            font-size: 1em;
+            transition: background-color 0.3s;
+        }
+        
+        .btn:hover {
+            background-color: #6b3452;
+        }
+        
+        .contact {
+            background-color: #f9f9f9;
+            padding: 40px;
+            border-radius: 10px;
+            text-align: center;
+            margin: 50px 0;
+        }
+        
+        .contact h2 {
+            color: #8b4569;
+            font-size: 2em;
+            margin-bottom: 20px;
+        }
+        
+        .contact p {
+            font-size: 1.1em;
+            margin: 10px 0;
+            color: #333;
+        }
+        
+        footer {
+            background-color: #8b4569;
+            color: white;
+            text-align: center;
+            padding: 20px;
+            margin-top: 50px;
+        }
+        
+        footer p {
+            margin: 5px 0;
+        }
+        
+        .social-links {
+            margin: 15px 0;
+        }
+        
+        .social-links a {
+            color: white;
+            text-decoration: none;
+            margin: 0 10px;
+            font-weight: bold;
+        }
+    </style>
 </head>
 <body>
-  <header class="site-header">
-    <div class="wrap header-inner">
-      <h1 class="logo">The Slice Cake Shop</h1>
-      <nav class="nav">
-        <a href="#featured">Featured</a>
-        <a href="#menu">Menu</a>
-        <a href="#gallery">Gallery</a>
-        <a href="#about">About</a>
+    <header>
+        <h1>🍰 The Slice Cakeshop 🍰</h1>
+        <p>Buttercream Cakes • Brownies • Cupcakes • Muffins</p>
+        <p style="font-size: 0.9em; margin-top: 10px;">Freshly baked with love & perfection</p>
+    </header>
+    
+    <nav>
+        <a href="#products">Our Products</a>
+        <a href="#about">About Us</a>
         <a href="#contact">Contact</a>
-      </nav>
+    </nav>
+    
+    <div class="container">
+        <section class="intro">
+            <h2>Welcome to The Slice Cakeshop</h2>
+            <p>
+                Indulge in our delectable selection of freshly baked treats. Every item is made with premium ingredients, 
+                love, and perfection. From custom cakes to decadent brownies, we have something for everyone!
+            </p>
+        </section>
+        
+        <section id="products" class="products">
+            <div class="product-card">
+                <div class="product-icon">🎂</div>
+                <div class="product-info">
+                    <h3>Buttercream Cakes</h3>
+                    <p>Rich, moist cakes with smooth buttercream frosting. Perfect for any occasion.</p>
+                    <button class="btn">Learn More</button>
+                </div>
+            </div>
+            
+            <div class="product-card">
+                <div class="product-icon">🧁</div>
+                <div class="product-info">
+                    <h3>Cupcakes</h3>
+                    <p>Individual servings of pure bliss. Available in various flavors and decorations.</p>
+                    <button class="btn">Learn More</button>
+                </div>
+            </div>
+            
+            <div class="product-card">
+                <div class="product-icon">🍫</div>
+                <div class="product-info">
+                    <h3>Brownies</h3>
+                    <p>Fudgy, chewy, and absolutely irresistible. A chocolate lover's dream!</p>
+                    <button class="btn">Learn More</button>
+                </div>
+            </div>
+            
+            <div class="product-card">
+                <div class="product-icon">🧁</div>
+                <div class="product-info">
+                    <h3>Muffins</h3>
+                    <p>Fluffy muffins in classic and creative flavors. Great for breakfast or anytime!</p>
+                    <button class="btn">Learn More</button>
+                </div>
+            </div>
+        </section>
+        
+        <section id="about" class="contact">
+            <h2>About Us</h2>
+            <p>
+                The Slice Cakeshop was founded with a passion for creating delicious, artisanal baked goods.
+            </p>
+            <p>
+                We believe that every bite should be special, which is why we use only the finest ingredients
+                and time-tested recipes to ensure quality and taste in every product.
+            </p>
+        </section>
+        
+        <section id="contact" class="contact">
+            <h2>Get in Touch</h2>
+            <p>📧 Email: <strong>info@theslicecakeshop.com</strong></p>
+            <p>📱 Phone: <strong>(555) 123-4567</strong></p>
+            <p>📍 Location: Your City, Your State</p>
+            <button class="btn" style="margin-top: 20px;">Place an Order</button>
+        </section>
     </div>
-  </header>
-
-  <section class="hero">
-    <div class="wrap hero-inner">
-      <div class="hero-text">
-        <h2>Freshly baked with love &amp; perfection</h2>
-        <p class="lead">Buttercream Cakes • Brownies • Cupcakes • Muffins</p>
-        <p class="sub">Handcrafted treats made to order — pick a signature, customise, or order a celebration cake.</p>
-        <div class="cta">
-          <a class="btn btn-primary" href="#featured">Explore Collection</a>
-          <a class="btn btn-outline" href="#order">Order Now</a>
+    
+    <footer>
+        <p>&copy; 2026 The Slice Cakeshop. All rights reserved.</p>
+        <div class="social-links">
+            <a href="#">Facebook</a> | 
+            <a href="#">Instagram</a> | 
+            <a href="#">Twitter</a>
         </div>
-      </div>
-      <div class="hero-visual">
-        <img src="assets/images/cake.svg" alt="Featured cake example">
-      </div>
-    </div>
-  </section>
-
-  <main class="wrap main">
-    <section id="featured" class="card">
-      <h3>🍰 Featured Cakes</h3>
-      <p class="muted">A rotating selection of our best sellers — update images in assets/images/ to show real photos.</p>
-      <div class="grid">
-        <article class="tile">
-          <img src="assets/images/cake.svg" alt="Signature cake">
-          <h4>Signature Cake</h4>
-          <p>Our signature buttercream finish with seasonal flavours.</p>
-        </article>
-        <article class="tile">
-          <img src="assets/images/cupcake.svg" alt="Cupcakes">
-          <h4>Cupcake Box</h4>
-          <p>Box of a dozen, mixed flavours.</p>
-        </article>
-        <article class="tile">
-          <img src="assets/images/brownie.svg" alt="Brownies">
-          <h4>Fudge Brownies</h4>
-          <p>Rich and fudgy — served in traybakes or by the slice.</p>
-        </article>
-      </div>
-    </section>
-
-    <section id="menu" class="card">
-      <h3>🎂 Custom Celebration Cakes</h3>
-      <div class="grid">
-        <div>
-          <h4>Sizes</h4>
-          <p>6", 8", 10" — servings vary. Tell us the guest count and theme.</p>
-        </div>
-        <div>
-          <h4>Flavours</h4>
-          <p>Vanilla, Chocolate, Red Velvet, Salted Caramel, Lemon.</p>
-        </div>
-        <div>
-          <h4>Add-ons</h4>
-          <p>Fresh fruit, chocolate drip, fresh flowers (edible), macarons.</p>
-        </div>
-      </div>
-    </section>
-
-    <section id="gallery" class="card">
-      <h3>📸 Gallery</h3>
-      <p class="muted">Replace these sample images with your photos in <code>assets/images/</code>.</p>
-      <div class="gallery">
-        <img src="assets/images/cake.svg" alt="Chocolate cake example">
-        <img src="assets/images/cupcake.svg" alt="Cupcake example">
-        <img src="assets/images/brownie.svg" alt="Brownie example">
-      </div>
-    </section>
-
-    <section id="about" class="card">
-      <h3>🤎 Our Story</h3>
-      <p>We are a small bakery passionate about handmade cakes and baked goods. Everything is mixed and baked in small batches with high-quality ingredients.</p>
-    </section>
-
-    <section id="order" class="card">
-      <h3>📩 Place an Order</h3>
-      <p>To place an order, email <a href="mailto:theslice25@gmail.com">theslice25@gmail.com</a> or call <a href="tel:+254773598797">0773598797</a>. Pickup: 123 Baker St., Townsville. Hours: Please contact us to arrange pickup times.</p>
-      <p class="muted">When you're ready, update this page or the README with any additional details — or send them to me and I will update them for you.</p>
-    </section>
-
-    <section id="contact" class="card small">
-      <h3>Contact</h3>
-      <address>
-        <strong>Email:</strong> <a href="mailto:theslice25@gmail.com">theslice25@gmail.com</a><br>
-        <strong>Phone:</strong> <a href="tel:+254773598797">0773598797</a><br>
-        <strong>Address:</strong> 123 Baker St., Townsville
-      </address>
-      <p>Follow us on <a href="#">Instagram</a> or <a href="#">Facebook</a>.</p>
-    </section>
-
-  </main>
-
-  <footer class="site-footer">
-    <div class="wrap">
-      <p>&copy; 2026 The Slice Cake Shop — Made with ❤️</p>
-      <p><a href="README.md">Repository README</a></p>
-    </div>
-  </footer>
+        <p style="margin-top: 15px; font-size: 0.9em;">Freshly baked with love & perfection ❤️</p>
+    </footer>
 </body>
 </html>
