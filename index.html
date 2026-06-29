@@ -4,78 +4,114 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width,initial-scale=1">
   <title>The Slice Cake Shop</title>
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&family=Playfair+Display:wght@400;600;700&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="assets/css/style.css">
   <meta name="description" content="Handcrafted buttercream cakes, brownies, cupcakes & muffins - The Slice Cake Shop">
 </head>
 <body>
   <header class="site-header">
-    <div class="wrap">
+    <div class="wrap header-inner">
       <h1 class="logo">The Slice Cake Shop</h1>
       <nav class="nav">
+        <a href="#featured">Featured</a>
         <a href="#menu">Menu</a>
         <a href="#gallery">Gallery</a>
-        <a href="#order">Order</a>
+        <a href="#about">About</a>
         <a href="#contact">Contact</a>
       </nav>
     </div>
   </header>
 
   <section class="hero">
-    <div class="wrap">
-      <h2>Freshly baked with love &amp; perfection</h2>
-      <p>Buttercream Cakes • Brownies • Cupcakes • Muffins</p>
-      <a class="btn" href="#order">Order Now</a>
+    <div class="wrap hero-inner">
+      <div class="hero-text">
+        <h2>Freshly baked with love &amp; perfection</h2>
+        <p class="lead">Buttercream Cakes • Brownies • Cupcakes • Muffins</p>
+        <p class="sub">Handcrafted treats made to order — pick a signature, customise, or order a celebration cake.</p>
+        <div class="cta">
+          <a class="btn btn-primary" href="#featured">Explore Collection</a>
+          <a class="btn btn-outline" href="#order">Order Now</a>
+        </div>
+      </div>
+      <div class="hero-visual">
+        <img src="assets/images/cake.svg" alt="Featured cake example">
+      </div>
     </div>
   </section>
 
   <main class="wrap main">
+    <section id="featured" class="card">
+      <h3>🍰 Featured Cakes</h3>
+      <p class="muted">A rotating selection of our best sellers — update images in assets/images/ to show real photos.</p>
+      <div class="grid">
+        <article class="tile">
+          <img src="assets/images/cake.svg" alt="Signature cake">
+          <h4>Signature Cake</h4>
+          <p>Our signature buttercream finish with seasonal flavours.</p>
+        </article>
+        <article class="tile">
+          <img src="assets/images/cupcake.svg" alt="Cupcakes">
+          <h4>Cupcake Box</h4>
+          <p>Box of a dozen, mixed flavours.</p>
+        </article>
+        <article class="tile">
+          <img src="assets/images/brownie.svg" alt="Brownies">
+          <h4>Fudge Brownies</h4>
+          <p>Rich and fudgy — served in traybakes or by the slice.</p>
+        </article>
+      </div>
+    </section>
+
     <section id="menu" class="card">
-      <h3>Our Menu (examples)</h3>
+      <h3>🎂 Custom Celebration Cakes</h3>
       <div class="grid">
         <div>
-          <h4>Cakes</h4>
-          <p>Custom celebration cakes (6", 8", 10"). Flavors: Vanilla, Chocolate, Red Velvet.</p>
+          <h4>Sizes</h4>
+          <p>6", 8", 10" — servings vary. Tell us the guest count and theme.</p>
         </div>
         <div>
-          <h4>Cupcakes</h4>
-          <p>Vanilla, Chocolate, Red Velvet, Salted Caramel.</p>
+          <h4>Flavours</h4>
+          <p>Vanilla, Chocolate, Red Velvet, Salted Caramel, Lemon.</p>
         </div>
         <div>
-          <h4>Brownies & Bars</h4>
-          <p>Fudge brownies, blondies.</p>
-        </div>
-        <div>
-          <h4>Muffins</h4>
-          <p>Blueberry, Banana Nut.</p>
+          <h4>Add-ons</h4>
+          <p>Fresh fruit, chocolate drip, fresh flowers (edible), macarons.</p>
         </div>
       </div>
     </section>
 
     <section id="gallery" class="card">
-      <h3>Gallery</h3>
+      <h3>📸 Gallery</h3>
+      <p class="muted">Replace these sample images with your photos in <code>assets/images/</code>.</p>
       <div class="gallery">
         <img src="assets/images/cake.svg" alt="Chocolate cake example">
         <img src="assets/images/cupcake.svg" alt="Cupcake example">
         <img src="assets/images/brownie.svg" alt="Brownie example">
       </div>
-      <p class="muted">Replace these example images by uploading real photos to the <code>assets/images/</code> folder.</p>
+    </section>
+
+    <section id="about" class="card">
+      <h3>🤎 Our Story</h3>
+      <p>We are a small bakery passionate about handmade cakes and baked goods. Everything is mixed and baked in small batches with high-quality ingredients.</p>
     </section>
 
     <section id="order" class="card">
-      <h3>Ordering</h3>
-      <p>To place an order, email <a href="mailto:you@example.com">you@example.com</a> or call <a href="tel:+11234567890">(123) 456-7890</a>. Pickup at 123 Baker St., Townsville. Hours: Tue–Sat 9:00–17:00.</p>
-      <p class="muted">(These are placeholders — replace them with your real contact details in the README or edit this page.)</p>
+      <h3>📩 Place an Order</h3>
+      <p>To place an order, email <a href="mailto:theslice25@gmail.com">theslice25@gmail.com</a> or call <a href="tel:+254773598797">0773598797</a>. Pickup: 123 Baker St., Townsville. Hours: Please contact us to arrange pickup times.</p>
+      <p class="muted">When you're ready, update this page or the README with any additional details — or send them to me and I will update them for you.</p>
     </section>
 
     <section id="contact" class="card small">
       <h3>Contact</h3>
       <address>
-        <strong>Email:</strong> <a href="mailto:you@example.com">you@example.com</a><br>
-        <strong>Phone:</strong> <a href="tel:+11234567890">(123) 456-7890</a><br>
+        <strong>Email:</strong> <a href="mailto:theslice25@gmail.com">theslice25@gmail.com</a><br>
+        <strong>Phone:</strong> <a href="tel:+254773598797">0773598797</a><br>
         <strong>Address:</strong> 123 Baker St., Townsville
       </address>
-      <p>Follow us on <a href="#">Instagram</a> or <a href="#">Facebook</a> (add links).</p>
+      <p>Follow us on <a href="#">Instagram</a> or <a href="#">Facebook</a>.</p>
     </section>
+
   </main>
 
   <footer class="site-footer">
